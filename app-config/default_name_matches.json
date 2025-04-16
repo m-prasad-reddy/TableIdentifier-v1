@@ -1,0 +1,5 @@
+{
+  "list_price": ["price", "cost"],
+  "model_year": ["year", "produced_year"],
+  "quantity": ["amount", "count"]
+}

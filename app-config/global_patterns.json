@@ -1,0 +1,6 @@
+{
+  "show all stores": {"sales.stores": 1.0},
+  "list products": {"production.products": 1.0},
+  "how many orders were placed in [YEAR]": {"sales.orders": 1.0},
+  "orders [DATE_RANGE]": {"sales.orders": 1.0}
+}

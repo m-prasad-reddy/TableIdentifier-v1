@@ -1,0 +1,1 @@
+{"query": "total sales amount at storename 'Baldwin Bikes'", "tables": ["sales.stores", "sales.orders", "sales.order_items"], "timestamp": "2025-04-16T16:04:19.266660", "count": 6}
