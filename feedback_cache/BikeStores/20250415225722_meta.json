@@ -1,1 +1,0 @@
-{"query": "list products by category", "tables": ["production.categories", "production.products"], "timestamp": "2025-04-16T12:26:00.014225", "count": 2}

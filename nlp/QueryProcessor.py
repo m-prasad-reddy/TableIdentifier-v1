@@ -1,5 +1,5 @@
 # nlp/QueryProcessor.py: Processes natural language queries into SQL
-# Basic version for TableIdentifier-Version-1
+# Basic version for TableIdentifier-Working-Version-1
 
 import os
 import logging

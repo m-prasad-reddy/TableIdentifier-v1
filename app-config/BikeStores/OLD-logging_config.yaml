@@ -1,0 +1,79 @@
+# Logging configuration for BikeStores Schema Analyzer
+#
+# Overview:
+# - Configures loggers for all components.
+# - Console: INFO level (minimal: errors, connections, user actions).
+# - File: DEBUG level (verbose: all details) in logs/bikestores_app.log.
+# - Rotate logs at 10MB, keep 5 backups.
+# - To reduce verbosity: Set logger level to WARNING.
+# - To enable verbose logs: Set logger level to DEBUG.
+#
+# Example:
+#   loggers:
+#     table_identifier:
+#       level: WARNING  # Minimal logs
+#       level: DEBUG    # Verbose logs
+#
+
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  detailed:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: detailed
+    stream: ext://sys.stdout
+  file:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: detailed
+    filename: logs/bikestores_app.log
+    maxBytes: 10485760
+    backupCount: 5
+
+loggers:
+  analyzer:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+  interface:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+  query_processor:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+  table_identifier:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+  name_match_manager:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+  nlp_pipeline:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+  patterns:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+  feedback:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+  schema:
+    level: INFO
+    handlers: [console, file]
+    propagate: false
+
+root:
+  level: INFO
+  handlers: [console, file]

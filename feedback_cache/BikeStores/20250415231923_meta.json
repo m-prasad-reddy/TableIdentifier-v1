@@ -1,1 +1,0 @@
-{"query": "total sales amount for each store", "tables": ["sales.stores", "sales.orders", "sales.order_items"], "timestamp": "2025-04-15T23:19:24.063248", "count": 1}
