@@ -1,1 +1,1 @@
-{"query": "how many employees works for all stores", "tables": ["sales.staffs", "sales.stores"], "timestamp": "2025-04-28T19:15:21.473398", "count": 3}
+{"query": "how many employees works for all stores", "tables": ["sales.staffs", "sales.stores"], "timestamp": "2025-04-28T22:23:17.948871", "count": 5}

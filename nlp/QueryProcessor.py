@@ -9,7 +9,7 @@ from analysis.table_identifier import TableIdentifier
 from analysis.name_match_manager import NameMatchManager
 from analysis.processor import NLPPipeline
 from config.patterns import PatternManager
-from database.connection import DatabaseConnection
+from config.manager import DatabaseConnection
 
 class QueryProcessor:
     """Processes natural language queries into SQL."""
