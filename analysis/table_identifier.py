@@ -17,7 +17,7 @@ class TableIdentifier:
     
     def __init__(self, schema_dict: Dict, feedback_manager, pattern_manager):
         """Initialize with schema, feedback, and patterns."""
-        logging_config_path = "app-config/BikeStores/logging_config.ini"
+        logging_config_path = "app-config/logging_config.ini"
         if os.path.exists(logging_config_path):
             try:
                 logging.config.fileConfig(logging_config_path, disable_existing_loggers=False)

@@ -1,0 +1,1 @@
+{"query": "how many orders were delivered in 2016", "tables": ["sales.orders"], "timestamp": "2025-04-28T19:10:51.640960", "count": 3}

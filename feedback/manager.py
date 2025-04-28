@@ -19,7 +19,7 @@ class FeedbackManager:
     
     def __init__(self, db_name: str):
         """Initialize with database name."""
-        logging_config_path = f"app-config/{db_name}/logging_config.ini"
+        logging_config_path = f"app-config/logging_config.ini"
         if os.path.exists(logging_config_path):
             try:
                 logging.config.fileConfig(logging_config_path, disable_existing_loggers=False)

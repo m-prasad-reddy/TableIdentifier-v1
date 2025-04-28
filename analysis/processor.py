@@ -13,7 +13,7 @@ class NLPPipeline:
     
     def __init__(self, pattern_manager, db_name: str = "BikeStores"):
         """Initialize with pattern manager and database name."""
-        logging_config_path = f"app-config/{db_name}/logging_config.ini"
+        logging_config_path = f"app-config/logging_config.ini"
         if os.path.exists(logging_config_path):
             try:
                 logging.config.fileConfig(logging_config_path, disable_existing_loggers=False)

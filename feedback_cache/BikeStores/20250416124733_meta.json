@@ -1,0 +1,1 @@
+{"query": "list all products by categories and brand names", "tables": ["production.categories", "production.brands", "production.products"], "timestamp": "2025-04-28T19:10:40.126185", "count": 3}

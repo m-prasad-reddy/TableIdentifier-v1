@@ -21,7 +21,7 @@ class DatabaseAnalyzer:
     
     def __init__(self):
         """Initialize logging and components."""
-        logging_config_path = "app-config/BikeStores/logging_config.ini"
+        logging_config_path = "app-config/logging_config.ini"
         if os.path.exists(logging_config_path):
             try:
                 logging.config.fileConfig(logging_config_path, disable_existing_loggers=False)
