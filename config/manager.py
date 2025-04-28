@@ -1,6 +1,7 @@
 # config/manager.py
 import os
 import json
+import pyodbc
 from typing import Dict, Optional
 
 class DatabaseConnection:
