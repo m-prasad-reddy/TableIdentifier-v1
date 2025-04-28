@@ -5,8 +5,7 @@ import logging
 import logging.config
 import os
 from typing import Dict, List, Tuple
-from database.connection import DatabaseConnection
-from config.manager import DBConfigManager
+from config.manager import DBConfigManager, DatabaseConnection
 from config.patterns import PatternManager
 from schema.manager import SchemaManager
 from feedback.manager import FeedbackManager
